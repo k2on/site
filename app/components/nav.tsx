@@ -1,13 +1,13 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const navItems = {
-  '/': {
-    name: 'home',
+  "/": {
+    name: "Home",
   },
-  'https://github.com/k2on': {
-    name: 'github',
+  "https://github.com/k2on": {
+    name: "Github",
   },
-}
+};
 
 export function Navbar() {
   return (
@@ -27,11 +27,11 @@ export function Navbar() {
                 >
                   {name}
                 </Link>
-              )
+              );
             })}
           </div>
         </nav>
       </div>
     </aside>
-  )
+  );
 }
