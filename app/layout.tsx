@@ -55,7 +55,7 @@ export default function RootLayout({
           <Footer />
           <Analytics />
           <SpeedInsights />
-          <p className="fixed bottom-0 right-[140px] text-[200px] font-[900] opacity-[.05] w-16 font-serif leading-[1]">
+          <p className="fixed bottom-0 right-[140px] text-[200px] font-[900] opacity-[.05] w-16 font-serif leading-[1] pointer-events-none -z-30">
             孔行至
           </p>
         </main>
