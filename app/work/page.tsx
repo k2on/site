@@ -14,7 +14,7 @@ export default function Page() {
       <div className="grid md:grid-cols-2 gap-4">
           <Link 
             target="_blank" 
-            href="https://apps.apple.com/us/app/coveted/id6475173819"
+            href="https://github.com/k2on/elytrarides"
             className="flex"
           >
             <div className="border transition hover:bg-zinc-900 border-zinc-700 rounded-[40px] py-4 w-full flex flex-col h-full">
