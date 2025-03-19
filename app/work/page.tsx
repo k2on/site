@@ -13,6 +13,11 @@ const WORK: Item[] = [
         image: "/work/elytra-rides/rider.png"
     },
     {
+        title: "Library Locator",
+        link: "https://github.com/k2on/atthelib.com",
+        image: "/work/atthelib/screenshot.png"
+    },
+    {
         title: "Online Shopping App",
         link: "https://apps.apple.com/us/app/coveted/id6475173819",
         image: "/work/coveted/screenshot-portrait.png"
@@ -53,10 +58,10 @@ function Showcase({ item }: ShowcaseProps) {
         href={link}
         className="flex"
       >
-        <div className="border transition bg-white dark:bg-black hover:bg-zinc-100 dark:hover:bg-zinc-900 border-zinc-200 dark:border-zinc-700 rounded-[40px] py-4 w-full flex flex-col h-full">
+        <div className="border transition bg-white dark:bg-black hover:bg-zinc-100 dark:hover:bg-zinc-900 border-zinc-200 dark:border-zinc-700 rounded-[40px] py-4 w-full flex flex-col h-full group">
           <div className="flex-1 flex items-center justify-center">
             <Image 
-              className="drop-shadow mx-auto object-contain" 
+              className="drop-shadow mx-auto object-contain transition duration-150 ease-in-out group-hover:scale-95" 
               alt={title} 
               src={image} 
               width={200} 
