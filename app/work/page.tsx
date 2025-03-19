@@ -27,7 +27,17 @@ const WORK: Item[] = [
         link: "https://apps.apple.com/ca/app/elytra-social/id6671938478",
         image: "/work/elytra-social/elytra-social-portrait.png"
     },
-]
+    {
+        title: "Calendar Sharing App",
+        link: "https://github.com/k2on/trinity",
+        image: "/work/trinity/screenshot.png"
+    },
+    {
+        title: "Cards Point Tracker",
+        link: "https://github.com/k2on/nertz.pro",
+        image: "/work/nertz-pro/screenshot.png"
+    },
+];
 
 export default function Page() {
   return (
