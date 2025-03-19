@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GithubSolid } from "./icon/github";
 import { LinkedinSolid } from "./icon/linkedin";
+import { EmailSolid } from "./icon/email";
 
 const navItems = {
   "/": {
@@ -33,6 +34,13 @@ export function Navbar() {
             })}
           </div>
           <div className="flex flex-row space-x-0 pl-10 items-center">
+            <Link
+              href="mailto:max@koonindustries.com"
+              target="_blank"
+              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+            >
+              <EmailSolid width={22} height={22} />
+            </Link>
             <Link
               href="https://linkedin.com/in/maxkoon"
               target="_blank"
