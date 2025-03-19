@@ -53,7 +53,7 @@ function Showcase({ item }: ShowcaseProps) {
         href={link}
         className="flex"
       >
-        <div className="border transition bg-black hover:bg-zinc-900 border-zinc-700 rounded-[40px] py-4 w-full flex flex-col h-full">
+        <div className="border transition bg-white dark:bg-black hover:bg-zinc-100 dark:hover:bg-zinc-900 border-zinc-200 dark:border-zinc-700 rounded-[40px] py-4 w-full flex flex-col h-full">
           <div className="flex-1 flex items-center justify-center">
             <Image 
               className="drop-shadow mx-auto object-contain" 
@@ -64,7 +64,7 @@ function Showcase({ item }: ShowcaseProps) {
             />
           </div>
           <div className="mt-auto py-4">
-            <h1 className="text-white text-center text-xl font-semibold">{title}</h1>
+            <h1 className="text-center text-xl font-semibold">{title}</h1>
           </div>
         </div>
       </Link>
