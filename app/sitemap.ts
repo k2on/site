@@ -1,6 +1,6 @@
 import { getBlogPosts } from 'app/blog/utils'
 
-export const baseUrl = 'https://koon.us'
+export const baseUrl = 'https://max.koon.us'
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({
