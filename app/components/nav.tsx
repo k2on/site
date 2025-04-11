@@ -1,7 +1,11 @@
+"use client"
+
 import Link from "next/link";
 import { GithubSolid } from "./icon/github";
 import { LinkedinSolid } from "./icon/linkedin";
 import { EmailSolid } from "./icon/email";
+import { useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 const navItems = {
   "/": {
@@ -11,8 +15,33 @@ const navItems = {
     name: "Work",
   },
 };
+const paths = Object.keys(navItems);
 
 export function Navbar() {
+  const current = usePathname();
+  const router = useRouter();
+
+  useEffect(() => {
+      const handleKeyDown = (e: KeyboardEvent) => {
+        let newPath: string | null = null;
+        const idx = paths.indexOf(current);
+
+        if (e.key == 'L') {
+            newPath = paths[idx + 1];
+        } else if (e.key == 'H') {
+            newPath = paths[idx - 1];
+        }
+
+        if (!newPath) return;
+        router.push(newPath);
+      }
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+        window.removeEventListener('keydown', handleKeyDown);
+    }
+  }, [current]);
+
   return (
     <aside className="-ml-[8px] mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20">
@@ -26,7 +55,7 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className={`transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1 ${path == current ? 'underline' : ''}`}
                 >
                   {name}
                 </Link>
