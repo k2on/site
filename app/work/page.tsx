@@ -47,7 +47,7 @@ export default function Page() {
   return (
     <section>
       <div className="mb-12">
-        <h1 className="font-semibold text-2xl mb-8 tracking-tighter">Freelace Work</h1>
+        <h1 className="font-semibold text-2xl mb-8 tracking-tighter">Professional Work</h1>
         <div className="grid md:grid-cols-2 gap-4">
           {FREELANCE.map(item => <Showcase key={item.title} item={item} />)}
           <Link 
