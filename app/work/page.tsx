@@ -14,7 +14,7 @@ const FREELANCE: Item[] = [
     },
     {
         title: "Point Tracking System",
-        link: "https://apps.apple.com/ca/app/elytra-social/id6671938478",
+        link: "https://apps.apple.com/us/app/elytra-social/id6671938478",
         image: "/work/elytra-social/elytra-social-portrait.png"
     },
 ];
