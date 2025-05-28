@@ -9,15 +9,15 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "koon.us",
-    template: "%s | koon.us",
+    default: "Max Koon",
+    template: "%s | Max Koon",
   },
   description: "Max Koon's website.",
   openGraph: {
-    title: "koon.us",
+    title: "Max Koon",
     description: "Max Koon's website.",
     url: baseUrl,
-    siteName: "koon.us",
+    siteName: "max.koon.us",
     locale: "en_US",
     type: "website",
   },
