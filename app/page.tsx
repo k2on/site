@@ -4,7 +4,8 @@ import Image from "next/image";
 export default function Page() {
   return (
     <section>
-      <Image alt="Max Koon" src="headshot_small.JPG" />
+      <Image className="rounded-3xl" width={500} height={300} alt="Max Koon" src="/headshot_small.JPG" />
+      <br />
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My name is Max Koon, welcome to my website.
       </h1>
