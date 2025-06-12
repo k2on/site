@@ -10,6 +10,12 @@ const navItems = {
   "/work": {
     name: "Work",
   },
+  "/posts": {
+    name: "Posts",
+  },
+  "/contact": {
+    name: "Contact",
+  },
 };
 
 export function Navbar() {
@@ -32,29 +38,6 @@ export function Navbar() {
                 </Link>
               );
             })}
-          </div>
-          <div className="flex flex-row space-x-0 pl-10 items-center">
-            <Link
-              href="mailto:max@koonindustries.com"
-              target="_blank"
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
-            >
-              <EmailSolid width={22} height={22} />
-            </Link>
-            <Link
-              href="https://linkedin.com/in/maxkoon"
-              target="_blank"
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
-            >
-              <LinkedinSolid width={18} height={18} />
-            </Link>
-            <Link
-              href="https://github.com/k2on"
-              target="_blank"
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
-            >
-              <GithubSolid width={22} height={22} />
-            </Link>
           </div>
         </nav>
       </div>
