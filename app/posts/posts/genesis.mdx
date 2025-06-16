@@ -1,0 +1,28 @@
+---
+title: 'Genesis CLI'
+publishedAt: '2025-06-16'
+summary: 'Bootstrap applications.'
+---
+
+## Usage:
+
+```sh
+genesis new geneaology.koon.us
+
+# shorter
+genesis new genealogy
+
+# even shorter
+genesis n genealogy
+
+# with an alias
+gn genealogy
+```
+
+This will do 4 things:
+
+1. This will create a new repo at `git.koon.us` called `genealogy`.
+2. Bootstrap a simple React Native application, with zero sync, OIDC authentication with `auth.koon.us`.
+3. Creates a new release of the application in a container registry.
+4. Deploys the application in the kubernetes cluster at `genealogy.koon.us`
+
