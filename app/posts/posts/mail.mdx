@@ -1,0 +1,33 @@
+---
+title: 'Koonmail'
+publishedAt: '2025-07-01'
+summary: 'My go at fixing email.'
+---
+
+I am going to fix email for myself once and for all.
+
+There are some requirements:
+
+1. Create different emails for each internet account
+2. Have a single screen that displays all email accounts (including work and school accounts)
+3. Offline access of mail
+4. Self-hostable
+
+Todo:
+
+- [ ] Use SES to send email
+- [ ] Create an incoming email server (NixOS in Vultur). We need this for the static IP.
+- [ ] Backend application (Using Zero Sync)
+- [ ] Create web frontend
+- [ ] Create terminal frontend (bonus)
+- [ ] Create a mobile frontend (extra bonus)
+
+## Design
+
+1. Incoming Email
+   - Gmail: It [looks](https://developers.google.com/workspace/gmail/api/reference/rest/v1/users/watch) like you can have a listener for new emails, and will get sent to the backend.
+   - Other: When an incoming email gets sent to the Vultr server, it will send a message to the backend.
+2. Message gets stored in Postgres DB & Zero Sync updates interfaces (Web, CLI, and Mobile)
+3. Outgoing Email
+   - Gmail: Use Gmail APIs to send emails
+   - Other: Uses Amazon's SES API to send emails
