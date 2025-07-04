@@ -1,3 +1,5 @@
+import { romanize } from "app/util";
+
 export default function Footer() {
   return (
     <footer className="mb-16">
