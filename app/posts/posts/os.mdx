@@ -8,6 +8,7 @@ summary: 'OS Design.'
 
 I want a system, where I have a flashdrive for each computer, that will restore a system back to normal, whether that system is my laptop, server, or even phone.
 
+I was a system that is easy to quickly restore from a total loss of infrastructure without reliance on the cloud. 
 
 - ark     (primary server, SC)
 - restore (backup server,  CT)
@@ -18,9 +19,12 @@ Level 0   -  Complete loss of location 1
 - No laptop
 - No server
 - No internet
-- No backups
+- No backups on location 1
 
 
+# Sovereignty level
 
-
+1. No internet - Only physical access to backup server
+2. Internet No Cloud - Port forwarding & static IP (No DNS)
+3. Internet w/ Cloud - Cloudflare Tunnel
 
