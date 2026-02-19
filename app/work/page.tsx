@@ -52,7 +52,7 @@ export default function Page() {
           {FREELANCE.map(item => <Showcase key={item.title} item={item} />)}
           <Link 
             target="_blank" 
-            href="https://naturadesign.pro"
+            href="https://natura.koon.us"
             className="flex md:row-span-2 md:col-span-2"
           >
             <div className="border transition bg-white dark:bg-black hover:bg-zinc-100 dark:hover:bg-zinc-900 border-zinc-200 dark:border-zinc-700 rounded-[40px] py-4 w-full flex flex-col h-full group">
